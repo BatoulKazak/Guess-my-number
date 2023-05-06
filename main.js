@@ -42,6 +42,7 @@ function playAgain() {
     RESULT_VALUE.innerText = "start guessing...";
     INPUT.value = "";
     SCORE_DISPLAYER.innerText = "?";
+    SCORE_VALUE.innerText = "Score: 0";
     HIGH_SCORE_VALUE.innerText = "High Score: 0";
 }
 
