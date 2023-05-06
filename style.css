@@ -1,0 +1,139 @@
+:root {
+    font-size: 62.5%;
+    --fore-colour: #DDD;
+    --main-colour: rgb(83, 196, 68);
+    --background-colour: #333;
+}
+
+body {
+    background-color: var(--background-colour);
+    color: var(--fore-colour);
+
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header div {
+    display: flex;
+    flex-direction: row;
+    place-content: space-between;
+    place-items: space-between;
+}
+
+button {
+    font-size: 2rem;
+    font-weight: bold;
+
+    aspect-ratio: 2.5;
+
+    background-color: var(--fore-colour);
+    color: var(--background-colour);
+
+    padding: 2.5rem;
+
+    display: flex;
+    place-content: center;
+    place-items: center;
+}
+
+header h1 {
+    display: flex;
+    place-content: center;
+    place-items: center;
+
+    padding-bottom: 5rem;
+}
+
+body>section {
+    position: relative;
+}
+
+body>section :first-child {
+    width: 100%;
+    height: 0.5rem;
+
+    background-color: var(--fore-colour);
+}
+
+body>section :nth-child(2) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 7rem;
+    aspect-ratio: 1;
+
+    font-size: 4rem;
+    color: var(--background-colour);
+    background-color: var(--fore-colour);
+
+    display: flex;
+    place-content: center;
+    place-items: center;
+}
+
+main {
+    margin-top: 20rem;
+
+    display: flex;
+    place-content: center;
+    place-items: center;
+    gap: 10rem;
+}
+
+main #number-displayer {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    gap: 1rem;
+}
+
+main #number-displayer {
+    display: flex;
+    place-content: center;
+    place-items: center;
+    gap: 2rem;
+}
+
+main #static-displayer {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    gap: 1rem;
+}
+
+main #static-displayer div {
+    display: flex;
+    place-content: center;
+    place-items: center;
+    gap: 2rem;
+}
+
+main #static-displayer>div {
+    place-self: start;
+}
+
+main #number-displayer input {
+    width: 15rem;
+    height: 5rem;
+
+    font-size: 4rem;
+    font-weight: bold;
+
+    text-align: center;
+
+    color: var(--fore-colour);
+    background-color: transparent;
+
+    border: 0.3rem solid var(--fore-colour);
+
+    padding: 1rem;
+}
